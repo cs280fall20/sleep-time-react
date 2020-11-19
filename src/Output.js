@@ -1,13 +1,4 @@
-function Output() {
-  const cycles = [
-    "11:44 PM",
-    "1:14 AM",
-    "2:44 AM",
-    "4:14 AM",
-    "5:44 AM",
-    "7:14 AM",
-  ];
-
+function Output(props) {
   return (
     <div>
       <p>It takes the average human fourteen minutes to fall asleep.</p>
@@ -16,7 +7,7 @@ function Output() {
         following times:
       </p>
       <ul>
-        {cycles.map((cycle, index) => (
+        {props.cycles.map((cycle, index) => (
           <li key={index}>{cycle}</li>
         ))}
       </ul>
