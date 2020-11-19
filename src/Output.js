@@ -1,5 +1,7 @@
 function Output(props) {
-  return (
+  return !props.showOutput ? (
+    <div></div>
+  ) : (
     <div>
       <p>It takes the average human fourteen minutes to fall asleep.</p>
       <p>

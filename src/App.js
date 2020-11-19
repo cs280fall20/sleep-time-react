@@ -13,6 +13,7 @@ class App extends Component {
         "5:44 AM",
         "7:14 AM",
       ],
+      showOutput: false,
     };
   }
 
@@ -41,7 +42,7 @@ class App extends Component {
     console.log(cycles);
 
     // update state
-    this.setState({ cycles: cycles });
+    this.setState({ cycles: cycles, showOutput: true });
   }
 
   render() {
@@ -49,7 +50,7 @@ class App extends Component {
       <div>
         <p>If you go to bed NOW, you should wake up at...</p>
         <button onClick={this.calcCycles.bind(this)}>zzz</button>
-        <Output cycles={this.state.cycles} />
+        <Output cycles={this.state.cycles} showOutput={this.state.showOutput} />
       </div>
     );
   }
