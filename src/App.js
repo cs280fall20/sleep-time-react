@@ -1,6 +1,7 @@
 import { Component } from "react";
 import Output from "./Output.js";
 import "./App.css";
+import logo from "./moon.png";
 
 class App extends Component {
   constructor(props) {
@@ -49,6 +50,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <img src={logo} className="App-logo" alt="logo" />
         <p>If you go to bed NOW, you should wake up at...</p>
         <button onClick={this.calcCycles.bind(this)}>zzz</button>
         <Output cycles={this.state.cycles} showOutput={this.state.showOutput} />

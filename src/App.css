@@ -25,3 +25,8 @@ button {
   -webkit-transition: all 330ms;
   transition: all 330ms;
 }
+
+.App-logo {
+  height: 30vmin;
+  pointer-events: none;
+}
