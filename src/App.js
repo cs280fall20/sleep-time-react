@@ -1,5 +1,6 @@
 import { Component } from "react";
 import Output from "./Output.js";
+import "./App.css";
 
 class App extends Component {
   constructor(props) {
@@ -47,7 +48,7 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className="App">
         <p>If you go to bed NOW, you should wake up at...</p>
         <button onClick={this.calcCycles.bind(this)}>zzz</button>
         <Output cycles={this.state.cycles} showOutput={this.state.showOutput} />

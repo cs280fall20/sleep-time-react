@@ -1,3 +1,5 @@
+import './Output.css';
+
 function Output(props) {
   return !props.showOutput ? (
     <div></div>
